@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
+import Card from "../components/Card";
+import Button from "../components/Button";
 
 const Home = () => {
   return (
@@ -9,7 +11,8 @@ const Home = () => {
       <Header />
       <main className="flex-1">
         <Hero />
-        {/* Add other sections here */}
+        <Card />
+        <Button />
       </main>
       <Footer />
     </div>
