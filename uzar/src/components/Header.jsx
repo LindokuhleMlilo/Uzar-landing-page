@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-6 md:gap-10">
           <Link to="/" className="flex items-center space-x-2">
-            {/* Replaced <Image> with <img> since this is a React project */}
+            
             <img
               src="/assets/images/squareUlogo.png"
               alt="Universal Protocol Logo"
