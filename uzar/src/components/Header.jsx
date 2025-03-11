@@ -9,12 +9,7 @@ const Header = () => {
         <div className="flex items-center gap-6 md:gap-10">
           <Link to="/" className="flex items-center space-x-2">
             
-            <img
-              src="/assets/images/squareUlogo.png"
-              alt="Universal Protocol Logo"
-              width={32}
-              height={32}
-            />
+            <img src="/src/assets/images/universal.png" alt="Universal Protocol Logo" width={32} height={32} />
             <span className="text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               UZAR
             </span>

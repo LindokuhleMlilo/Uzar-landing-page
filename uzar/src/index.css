@@ -4,7 +4,7 @@
 
 @import "tailwindcss";
 
-/* Apply gradient background to the whole page */
+
 body {
   @apply bg-gradient-to-br from-blue-50 via-purple-100 to-purple-50;
 }

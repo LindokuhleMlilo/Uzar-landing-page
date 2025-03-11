@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex items-center gap-2">
           {/* Fixed: Changed <Image> to <img> */}
           <img
-            src="/assets/images/squareUlogo.png"
+            src="./src/assets/images/universal.png"
             alt="Universal Protocol Logo"
             width={24}
             height={24}
