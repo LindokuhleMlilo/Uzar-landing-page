@@ -20,5 +20,13 @@ const CardContent = ({ children, className }) => (
   <div className={`p-4 ${className}`}>{children}</div>
 );
 
-// Export Card along with other components
-export { Card, CardHeader, CardTitle, CardContent };
+const CardDescription = ({ children, className }) => (
+  <p className={`text-sm text-muted-foreground ${className}`}>{children}</p>
+);
+
+const CardFooter = ({ children, className }) => (
+  <div className={`p-4 border-t ${className}`}>{children}</div>
+);
+
+
+export { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter };

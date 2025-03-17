@@ -8,6 +8,7 @@ import TheProblem from "../components/TheProblem";
 import TheUzarSolution from "../components/TheUzarSolution";
 import HowUzarWorks from "../components/HowUzarWorks";
 import UseCases from "../components/UseCases";
+import UzarEcosystem from "../components/UzarEcosystem";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <TheUzarSolution />
         <HowUzarWorks />
         <UseCases />
+        <UzarEcosystem />
         <Card />
         <Button />
       </main>
