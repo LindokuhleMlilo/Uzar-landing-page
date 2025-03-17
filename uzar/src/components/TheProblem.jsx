@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Card from "./Card"; 
+import { Card } from "./Card"; 
+
 const TheProblem = () => {
   return (
-    <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-50 via-purple-100 to-purple-50
-">
+    <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-50 via-purple-100 to-purple-50">
       <div className="container px-4 md:px-6">
         <motion.div
           className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center"
@@ -30,7 +30,7 @@ const TheProblem = () => {
             transition={{ duration: 0.3, delay: 0.1 }}
             viewport={{ once: true }}
           >
-           <Card className="border-none bg-white shadow-lg hover:shadow-xl transition-all duration-300 shadow-[rgba(59,130,246,0.3)] hover:shadow-[rgba(147,51,234,0.5)]">
+            <Card className="border-none bg-white shadow-lg hover:shadow-xl transition-all duration-300 shadow-[rgba(59,130,246,0.3)] hover:shadow-[rgba(147,51,234,0.5)]">
               <div className="p-6">
                 <h3 className="text-xl font-bold text-blue-600">High Costs</h3>
                 <p className="mt-2 text-muted-foreground">
@@ -46,7 +46,6 @@ const TheProblem = () => {
             viewport={{ once: true }}
           >
             <Card className="border-none bg-white shadow-lg hover:shadow-xl transition-all duration-300 shadow-[rgba(59,130,246,0.3)] hover:shadow-[rgba(147,51,234,0.5)]">
-
               <div className="p-6">
                 <h3 className="text-xl font-bold text-purple-600">Lack of Accessibility</h3>
                 <p className="mt-2 text-muted-foreground">

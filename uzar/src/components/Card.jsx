@@ -8,4 +8,17 @@ const Card = ({ children, className }) => {
   );
 };
 
-export default Card;
+const CardHeader = ({ children, className }) => (
+  <div className={`p-4 border-b ${className}`}>{children}</div>
+);
+
+const CardTitle = ({ children, className }) => (
+  <h3 className={`text-lg font-bold ${className}`}>{children}</h3>
+);
+
+const CardContent = ({ children, className }) => (
+  <div className={`p-4 ${className}`}>{children}</div>
+);
+
+// Export Card along with other components
+export { Card, CardHeader, CardTitle, CardContent };
