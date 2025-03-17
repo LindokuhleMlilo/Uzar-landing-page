@@ -6,6 +6,7 @@ import { Card } from "../components/Card";
 import Button from "../components/Button";
 import TheProblem from "../components/TheProblem";
 import TheUzarSolution from "../components/TheUzarSolution";
+import HowUzarWorks from "../components/HowUzarWorks";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Hero />
         <TheProblem />
         <TheUzarSolution />
+        <HowUzarWorks />
         <Card />
         <Button />
       </main>
