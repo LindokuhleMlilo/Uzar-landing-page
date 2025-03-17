@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Card from "./Card";
+import { CardHeader, CardTitle, CardContent, Card } from "./Card";
 
 const UseCases = () => {
   return (
