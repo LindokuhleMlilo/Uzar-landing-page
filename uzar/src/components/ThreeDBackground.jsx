@@ -19,7 +19,7 @@ const ThreeDBackground = () => {
     scene.add(sphere);
 
     // Position the Camera
-    camera.position.z = 20; // Adjusted camera position to fit the larger sphere
+    camera.position.z = 20; 
 
     // Animation Loop
     const animate = () => {

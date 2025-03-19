@@ -23,8 +23,8 @@ const Hero = () => {
                 Bridging the Gap with ZAR Rand
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                A stablecoin pegged to the South African ZAR rand, uniquely positioned to address the inefficiencies
-                and high costs associated with cross-border money transfers.
+              Designed for fast global payments and round-the-clock financial markets, 
+              UZAR is a regulated digital currency that can be redeemed 1:1 for South African Rand.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">

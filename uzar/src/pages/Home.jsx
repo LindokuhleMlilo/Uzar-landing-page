@@ -16,10 +16,10 @@ const Home = () => {
       <Header />
       <main className="flex-1">
         <Hero />
+        <UseCases />
         <TheProblem />
         <TheUzarSolution />
         <HowUzarWorks />
-        <UseCases />
         <UzarEcosystem />
         <Card />
         <Button />
