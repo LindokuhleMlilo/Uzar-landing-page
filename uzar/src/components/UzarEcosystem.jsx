@@ -1,14 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { CardHeader, CardTitle, CardContent, CardDescription, Card, CardFooter } from "./Card";
-import  Button  from "./Button"; 
-import { Link } from "react-router-dom"; // or "next/link" if using Next.js
-import { FaArrowRight } from "react-icons/fa"; 
+import Button from "./Button";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+import ThreeDBackground from "./ThreeDBackground"; 
 
 const UzarEcosystem = () => {
   return (
-    <section id="dapps" className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6">
+    <section id="dapps" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
+      {/* 3D Background */}
+      <ThreeDBackground />
+
+      {/* Content */}
+      <div className="container px-4 md:px-6 relative z-10">
         <motion.div
           className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -26,7 +31,10 @@ const UzarEcosystem = () => {
             Explore our dapps built on the UZAR stablecoin
           </p>
         </motion.div>
+
+        {/* Cards Grid */}
         <div className="mx-auto grid justify-center gap-8 sm:grid-cols-3 lg:max-w-5xl mt-8">
+          {/* Card 1: Sweepstake Lottery */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -34,7 +42,7 @@ const UzarEcosystem = () => {
             viewport={{ once: true }}
             whileHover={{ y: -10 }}
           >
-            <Card className="flex flex-col h-full border-none shadow-lg overflow-hidden">
+            <Card className="flex flex-col bg-purple-200 h-full border-none shadow-lg overflow-hidden">
               <div className="h-3 bg-gradient-to-r from-blue-500 to-purple-600"></div>
               <CardHeader>
                 <CardTitle className="text-blue-600">Sweepstake Lottery</CardTitle>
@@ -52,12 +60,14 @@ const UzarEcosystem = () => {
                 >
                   <Link href="/lottery">
                     Enter Lottery
-                    <FaArrowRight className="ml-2 h-4 w-4" /> 
+                    <FaArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </CardFooter>
             </Card>
           </motion.div>
+
+          {/* Card 2: Offramp */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -65,7 +75,7 @@ const UzarEcosystem = () => {
             viewport={{ once: true }}
             whileHover={{ y: -10 }}
           >
-            <Card className="flex flex-col h-full border-none shadow-lg overflow-hidden">
+            <Card className="flex flex-col bg-purple-200  h-full border-none shadow-lg overflow-hidden">
               <div className="h-3 bg-gradient-to-r from-purple-600 to-blue-500"></div>
               <CardHeader>
                 <CardTitle className="text-purple-600">Offramp</CardTitle>
@@ -84,12 +94,14 @@ const UzarEcosystem = () => {
                 >
                   <Link href="/offramp">
                     Use Offramp
-                    <FaArrowRight className="ml-2 h-4 w-4" /> 
+                    <FaArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </CardFooter>
             </Card>
           </motion.div>
+
+          {/* Card 3: Polymarkets */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -97,7 +109,7 @@ const UzarEcosystem = () => {
             viewport={{ once: true }}
             whileHover={{ y: -10 }}
           >
-            <Card className="flex flex-col h-full border-none shadow-lg overflow-hidden">
+            <Card className="flex flex-col bg-purple-200  h-full border-none shadow-lg overflow-hidden">
               <div className="h-3 bg-gradient-to-r from-blue-500 to-purple-600"></div>
               <CardHeader>
                 <CardTitle className="text-blue-600">Polymarkets</CardTitle>
@@ -116,7 +128,7 @@ const UzarEcosystem = () => {
                 >
                   <Link href="/polymarkets">
                     Explore Markets
-                    <FaArrowRight className="ml-2 h-4 w-4" /> 
+                    <FaArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </CardFooter>
